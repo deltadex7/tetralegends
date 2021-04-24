@@ -85,9 +85,24 @@
           "value": "battle"
         },
 		{
-          "label": "Battle Plus",
+          "label": "FireTV + Battle Fusion",
           "fixedText": true,
           "value": "battleplus"
+        },
+		{
+          "label": "Battle Drop",
+          "fixedText": true,
+          "value": "battledrop"
+        },
+		{
+          "label": ".com",
+          "fixedText": true,
+          "value": "com"
+        },
+		{
+          "label": "Friends Default",
+          "fixedText": true,
+          "value": "friendsdefault"
         },
 		{
           "label": "Friends 1989",
@@ -120,6 +135,11 @@
           "value": "tetrio"
         },
         {
+          "label": "Online Japan",
+          "fixedText": true,
+          "value": "onlinejapan"
+        },
+        {
           "label": "NullpoMino",
           "fixedText": true,
           "value": "nullpomino"
@@ -130,11 +150,21 @@
           "value": "nblox"
         },
 		{
+          "label": "LJ65",
+          "fixedText": true,
+          "value": "lj65"
+        },
+		{
           "label": "Uehara",
           "fixedText": true,
           "value": "uehara"
         },
-				{
+		{
+          "label": "Bejeweled",
+          "fixedText": true,
+          "value": "bej"
+        },
+		{
           "label": "SNES T+Dr. M.",
           "fixedText": true,
           "value": "snesu"
