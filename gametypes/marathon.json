@@ -9,9 +9,12 @@
     "rotationSystem": "srs",
     "skin": "srsx",
     "soundbank": "standard",
-    "music": ["marathon", "marathon-2"],
+    "music": [
+      "marathon", "marathon-2", 
+      "../master/master", "../master/master-last"
+    ],
     "musicLinePoints": [
-      100
+      100, 200, 400
     ],
     "hasDangerBgm": true,
     "scoreTable": "guideline",

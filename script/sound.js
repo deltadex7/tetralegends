@@ -73,11 +73,13 @@ class Sound {
   loadMenuVoice() {
     const files = ['menuguideline', 'menutetrax', 'menuretro', 'menuarcade', 'menucontrols',
       'menutuning', 'menuvideo', 'menuaudio'];
-    for (const soundName of files) {
-      this.menuVox[soundName] = new Howl({
-        src: [`./vox/${settings.settings.voicebank}/${soundName}.ogg`],
-        volume: settings.settings.voiceVolume / 100,
-      });
+    if (settings.settings.voicebank !== 'off') {
+      for (const soundName of files) {
+        this.menuVox[soundName] = new Howl({
+          src: [`./vox/${settings.settings.voicebank}/${soundName}.ogg`],
+          volume: settings.settings.voiceVolume / 100,
+        });
+      }      
     }
   }
   playMenuSe(name) {
@@ -106,7 +108,7 @@ class Sound {
     loadSoundbank(name)
         .then((soundData) => {
           this.skipReadyGo = (soundData.usesReadyGoVoices) ? true : false;
-          if (this.skipReadyGo) {
+          if (this.skipReadyGo && settings.settings.voicebank !== 'off') {
             delete this.toPlay.ready;
             delete this.toPlay.go;
             delete this.toPlay.start;

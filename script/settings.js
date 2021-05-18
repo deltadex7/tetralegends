@@ -137,6 +137,9 @@ class Settings {
       },
       prox: {
         startingLevel: 1,
+      },
+      standardx: {
+        startingLevel: 1
       }
     };
     this.settings = {};
